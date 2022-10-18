@@ -1,6 +1,6 @@
 
 
-let button = document.getElementById("get-data");
+const button = document.getElementById("get-data");
 
 const getData = () => {
     fetch(`https://akademia108.pl/api/ajax/get-post.php`, {
@@ -31,7 +31,6 @@ const getData = () => {
         document.body.appendChild(titleDescribe);
         document.body.appendChild(importedBodyDescribe);
         document.body.appendChild(hr);
-        (console.log(userId, id, importedBody, title))
     })
     .catch((error) => {
         console.error(error);
